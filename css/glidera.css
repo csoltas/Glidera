@@ -1,0 +1,38 @@
+body {
+	padding-top: 70px;
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+ol.timeline {
+	position: relative;
+	display: block;
+	margin: 200px 0 0 0;
+	padding: 0;
+	height: 1px;
+	background: #424D57;
+}
+
+.timeline li {
+	position: relative;
+	top: -57px;
+	display: inline-block;
+	float: left;
+	width: 20%;
+}
+
+.timeline li::after {
+	content: "";
+	display: block;
+	margin-top: 10px;
+	width: 14px;
+	height: 14px;
+	border: 3px solid #e0e0e0;
+	border-radius: 12px;
+	background: #fff;
+}
+
+.timeline-content {
+}
