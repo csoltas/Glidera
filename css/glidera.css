@@ -1,12 +1,66 @@
+/* FONT-FACE DECLARATIONS */
+@font-face {
+  font-family: 'Benton Sans';
+  src: url('../fonts/BentonSans.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/BentonSans.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/BentonSans.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/BentonSans.svg') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Benton Sans Medium';
+  src: url('../fonts/BentonSans-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/BentonSans-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/BentonSans-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/BentonSans-Medium.svg') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Benton Sans Bold';
+  src: url('../fonts/BentonSans-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/BentonSans-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/BentonSans-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+/* GLOBAL STYLES & BOOTSTRAP MODS */
+
 body {
-	padding-top: 70px;
+	padding-top: 80px;
+	font-family: 'Benton Sans', sans-serif;
+	color: #c2c2c2;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.navbar-default {
+	background: #fff;
+	border: none;
+}
+
+.navbar-default .container {
+	border-bottom: 1px solid #f1f1f1;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #c2c2c2;
+}
+
+h1 {
+	
+}
+
+h2,
+.h2 {
+	font-family: 'Benton Sans Medium', sans-serif;
 }
 
 .container-fluid {
 	padding: 0;
 }
 
-ol.timeline {
+/* SETUP TIMELINE */
+
+.timeline-wrapper {
 	position: relative;
 	display: block;
 	margin: 200px 0 0 0;
@@ -15,7 +69,12 @@ ol.timeline {
 	background: #424D57;
 }
 
-.timeline li {
+.timeline-items {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.timeline-items li {
 	position: relative;
 	top: -57px;
 	display: inline-block;
@@ -23,7 +82,7 @@ ol.timeline {
 	width: 20%;
 }
 
-.timeline li::after {
+.timeline-items li::after {
 	content: "";
 	display: block;
 	margin-top: 10px;
@@ -34,5 +93,97 @@ ol.timeline {
 	background: #fff;
 }
 
-.timeline-content {
+/* SETUP TIMELINE - complete steps */
+
+.timeline-items li.complete {
+	position: relative;
+	top: -108px;
+}
+
+.timeline-items .complete .check {
+	font-size: 45px;
+	color: #ABCC3A;
+	width: 100%;
+}
+
+/* SETUP TIMELINE - current step */
+
+.timeline-items li.current::after {
+	margin: 0;
+	width: 0;
+	height: 0;
+	border: none;
+}
+
+.timeline-items li.current {
+	position: relative;
+	top: -131px;
+	left: -3.5%;
+}
+
+.timeline-items li.current>div {
+	font-family: 'Benton Sans Bold', sans-serif;
+	font-size: 18px;
+	color: #424D57;
+	
+}
+
+.timeline-items li.current>div>span {
+	font-family: 'Benton Sans', sans-serif;
+	font-size: 12px;
+	color: #ddd;
+	letter-spacing: 1px;
+	line-height: 25px;
+	
+}
+
+.timeline-items li.current .glyphicon-envelope {
+	content: "";
+	display: block;
+	margin-top: 10px;
+	margin-left: -7px;
+	width: 109px;
+	height: 109px;
+	border: none;
+	border-radius: 100px;
+	background: #424D57;
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+	font-size: 60px;
+	text-align: center;
+	color: rgba(255,255,255,0.5);
+	padding-top: 25px;	
+}
+
+
+/* SETUP TIMELINE - incomplete steps */
+
+.timeline-items i.incomplete {
+	/* Collect common icon styles */
+	position: relative;
+	margin-right: 22px;
+	float: left;
+	color: #e0e0e0;
+}
+
+
+.timeline-items i.fa-mobile.incomplete {
+	/* Individual position adjustments are simpler in this case than nesting divs in divs in divs in an li */
+	top: -25px;
+	margin-left: -10px;
+	font-size: 70px;
+	
+}
+
+.timeline-items i.glyphicon-user.incomplete {
+	/* Individual position adjustments are simpler in this case than nesting divs in divs in divs in an li */
+	top: -15px;
+	margin-left: -17px;
+	font-size: 51px;
+}
+
+.timeline-items i.glyphicon-piggy-bank.incomplete {
+	/* Individual position adjustments are simpler in this case than nesting divs in divs in divs in an li */
+	top: -11px;
+	margin-left: -17px;
+	font-size: 51px;
 }

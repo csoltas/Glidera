@@ -10,6 +10,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/glidera.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -43,18 +44,19 @@
   	</nav>
   	
   	<div class="container">
-  		<h2>Hi, Firstname Lastname!</h2>
-  		<p>To start buying and selling Bitcoin, finish setting up your account!</p>
+  		<span class="h2">Hi, Firstname Lastname!</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span>To start buying and selling Bitcoin, finish setting up your account!</span>
   	</div>
   	
   	<div class="container-fluid">
-  		<ol class="timeline">
-  			<li><div class="timeline-content">Signed up <br>with invite code</div></li>
-  			<li><div class="timeline-content">Verify <br>your email</div></li>
-  			<li><div class="timeline-content">Add a <br>mobile phone</div></li>
-  			<li><div class="timeline-content">Add your <br>personal info</div></li>
-  			<li><div class="timeline-content">Add a <br>bank account</div></li>
-  		</ol>
+  		<div class="timeline-wrapper">
+  			<ol class="timeline-items">
+  				<li class="complete"><div class="item-content"><span class="glyphicon glyphicon-ok check" aria-hidden="true"></span>Signed up <br>with invite code</div></li>
+  				<li class="current"><div><span>Next:</span><br>Verify <br>your email</div><span class="glyphicon glyphicon-envelope"></span></li>
+  				<li class="incomplete"><i class="fa fa-mobile incomplete"></i><div>Add a <br>mobile phone</div></li>
+  				<li class="incomplete"><i class="glyphicon glyphicon-user incomplete"></i><div>Add your <br>personal info</div></li>
+  				<li class="incomplete"><i class="glyphicon glyphicon-piggy-bank incomplete"></i><div>Add a <br>bank account</div></li>
+  			</ol>
+  		</div>
    	</div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
