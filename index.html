@@ -34,30 +34,89 @@
 	  				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Firstname Lastname <span class="caret"></span></a>
 	  					<ul class="dropdown-menu">
 		  					<li><a href="#">Support & feedback</a></li>
-		  					<li role="separator" class="divider"></li>
 		  					<li><a href="#">Logout</a></li>
 		  				</ul>
 		  			</li>
 		  		</ul>
   			</div>
-  		</div>
+  		</div><!-- /.container -->
   	</nav>
   	
   	<div class="container">
-  		<span class="h2">Hi, Firstname Lastname!</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span>To start buying and selling Bitcoin, finish setting up your account!</span>
-  	</div>
+  		<h1>Hi, Firstname!</h1>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <h2>To start buying and selling Bitcoin, finish setting up your account!</h2>
+  	</div><!-- /.container -->
   	
   	<div class="container-fluid">
   		<div class="timeline-wrapper">
   			<ol class="timeline-items">
   				<li class="complete"><div class="item-content"><span class="glyphicon glyphicon-ok check" aria-hidden="true"></span>Signed up <br>with invite code</div></li>
-  				<li class="current"><div><span>Next:</span><br>Verify <br>your email</div><span class="glyphicon glyphicon-envelope"></span></li>
+  				<li class="current"><div><span>Next:</span><br>Verify <br>your email</div><a href="#"><span class="glyphicon glyphicon-envelope"></span></a></li>
   				<li class="incomplete"><i class="fa fa-mobile incomplete"></i><div>Add a <br>mobile phone</div></li>
   				<li class="incomplete"><i class="glyphicon glyphicon-user incomplete"></i><div>Add your <br>personal info</div></li>
   				<li class="incomplete"><i class="glyphicon glyphicon-piggy-bank incomplete"></i><div>Add a <br>bank account</div></li>
   			</ol>
   		</div>
-   	</div>
+   	</div><!-- /.container-fluid -->
+   	
+   	<div class="container">
+   	
+   		<div class="btc-price-wrapper">
+   			<p>Current bitcoin price:</p>
+   			<h2>$286.00</h2>
+   			<p>per 1 BTC</p>
+   		</div>
+   		
+   		<div class="buysell-panel">
+   			<ul class="nav nav-tabs nav-justified">
+   				<li role="presentation"><a href="#">Buy</a></li>
+   				<li role="presentation"><a href="#" class="active">Sell</a></li>
+   			</ul>
+   			
+   			<div class="panel-content">
+   				<div class="input-group">
+   					<input type="text" class="form-control" placeholder="BTC amount to sell" aria-describedby="addon-btc-tosell"><span class="input-group-addon" id="addon-btc-tosell">BTC</span>
+   				</div>
+   				<div class="input-group">
+   					<input type="text" class="form-control" placeholder="USD amount to sell" aria-describedby="addon-usd-tosell"><span class="input-group-addon" id="addon-usd-tosell">USD</span>
+   				</div>
+   				<table>
+   					<tbody>
+   						<tr>
+   							<td>Subtotal</td>
+   							<td>$0.00</td>
+   						</tr>
+   						<tr class="tbody-bottom">
+   							<td>Fee</td>
+   							<td>($0.00)</td>
+   						</tr>
+   					</tbody>
+   					<tfoot>
+   						<tr>
+   							<td>You get</td>
+   							<td>$0.00</td>
+   						</tr>
+   					</tfoot>
+   				</table>
+   				
+   				<button type="submit" class="btn btn-buysell disabled">Launch wallet and sell</button>
+   			</div>
+   		</div>
+   		
+   		<div class="row">
+   			<div class="col-xs-12">
+   				<h2 class="transactions">Your recent Bitcoin transactions</h2 class="transactions">
+	   			<p class="transactions">Finish setting up your account to start making transactions!</p>
+   			</div>
+   		</div>
+   	
+   		<footer>
+   			<div class="pull-left">All content &copy; Glidera Inc.</div>
+   			<div class="pull-right">
+	   			<a href="#" class="footer-link">Terms of Use</a>
+	   			<a href="#" class="footer-link">Privacy Policy</a>
+	   		</div>
+	   	</footer>
+   	</div><!-- /.container -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
